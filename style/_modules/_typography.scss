@@ -1,0 +1,69 @@
+
+html{
+	font-family: $base-font-family;
+	font-size: $base-font-size;
+	font-weight: $base-font-weight;
+}
+
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
+
+h1 {
+	font-size: 2em;
+	font-weight: bold;
+	line-height: $base-line-height; //20px
+	font-family: $base-font-family;
+}
+
+a {
+	
+	font-family: $base-font-family;
+	text-decoration:none !important;
+	font-weight:bold;
+	outline:0;
+	position:relative;
+    color:white;
+
+	&:visited{
+		outline:0;
+		text-decoration:none;
+	}
+	&:active{
+        color:white;
+		outline:0;
+		text-decoration:none;
+	}
+	&:hover{
+        color:white;
+		outline:0;
+		text-decoration:none;
+	}
+	&:focus{
+		outline:0;
+		text-decoration:none;
+	}
+}
+
+
+p {
+	color:black;
+  	@include font-size(14px)
+	font-family: $base-font-family;
+
+	&.small{
+		font-size:.9em;
+	}
+
+	&.uppercase{
+		text-transform: uppercase;
+	}
+}
+
+
