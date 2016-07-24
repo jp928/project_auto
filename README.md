@@ -1,4 +1,4 @@
-# React AusPost Auto-Complete
+# React auto complete
 
 React, Redux
 
@@ -34,13 +34,13 @@ Currently this project is using font awesome for its icons.  This has been loade
 
 ## Development
 
-Builds the application and starts a webserver with livereload. By default the webserver starts at port 1337.
-You can define a port with `$ gulp --port 1337`.
+Builds the application and starts a webserver using webpack. By default the webserver starts at port 8080.
+
 
 ## Serve and Build
 
 Run this script: <br />
-$ npm start -- this will start Gulp perform a "clean" + add files to /dist directory +  watch for changes.
+$ npm start
 
 ## Dependancies
 
